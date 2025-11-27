@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title> CV Jaber Al-Amriny </title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #f2f2f2;
+            font-family: 'Droid Arabic Naskh', Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .left-text {
+            text-align: left;
+        }
+
+        .cv-box {
+            width: 80%;
+            max-width: 1000px;
+            height: 90vh;
+            background: #fff;
+            display: flex;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transform: scale(0.9);
+        }
+
+        .right-bar {
+            width: 320px;
+            padding: 20px;
+            background: #d4d4d4;
+            text-align: center;
+            color: #0e0e0e;
+            direction: rtl;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            background: #333;
+            border-radius: 10%;
+            margin: 0 auto 15px auto;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 200px;
+            height: 150px;
+            border: none;
+            perspective: 1000px;
+            margin: 0 auto 15px auto;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .flip-card-back {
+            background-color: #808b97;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .right-bar h1 {
+            margin: 6px 0 4px 0;
+            font-size: 26px;
+        }
+
+        .right-bar h2 {
+            font-size: 17px;
+            margin: 12px 0 7px 0;
+        }
+
+        .right-bar h3 {
+            margin: 0 0 10px 0;
+            font-size: 17px;
+            color: #555;
+        }
+
+        .right-bar hr {
+            margin: 10px 0;
+        }
+
+        .right-bar img {
+            width: 35px !important;
+        }
+
+        .contact-line {
+            font-size: 14px;
+            margin: 4px 0;
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
+            display: block;
+        }
+
+        .left-content {
+            flex: 1;
+            padding: 25px 35px;
+            direction: rtl;
+            text-align: left;
+        }
+
+        .left-content h2 {
+            font-size: 20px;
+            color: #3b5072;
+            border-left: 4px solid #adaeb0;
+            padding-left: 12px;
+            margin-top: 16px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .left-content h2:first-of-type {
+            margin-top: 0;
+            text-align: left;
+        }
+
+        .left-content p {
+            font-size: 13px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .section-detail {
+            margin-bottom: 14px;
+            text-align: left;
+        }
+
+        .section-detail h3 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #444;
+            text-align: left;
+        }
+
+        .section-detail span {
+            display: block;
+            font-size: 13px;
+            color: #861010;
+            margin-bottom: 6px;
+            text-align: left;
+        }
+
+        .section-detail ul {
+            padding-right: 18px;
+            margin-top: 4px;
+            text-align: left;
+            list-style: none;
+        }
+
+        .section-detail li {
+            list-style: none;
+            font-size: 13px;
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-box">
+
+        <div class="left-content">
+
+            <h2> About Me</h2>
+            <p>
+                I am an Information Technology Engineer with extensive experience in designing
+                and implementing innovative technology solutions. I have skills in software
+                development, network management, and information security. I possess 5 years of
+                experience in the IT field with strong capabilities in analyzing and efficiently
+                solving technical problems
+            </p>
+
+            <h2>Work Experience</h2>
+            <br>
+
+            <div class="section-detail left-text">
+                <h3>Systems and IT Engineer</h3>
+                <span>Micrsoft Company | 2021 – Present</span>
+                <ul>
+                    <li>10 Managing and maintaining computer networks
+                        and IT infrastructure with storage capacity up to 60,000 GB.</li>
+                    <li>Designing and implementing information security solutions using modern tools and technologies.
+                    </li>
+                    <li>Working on digital transformation projects using technologies such as cloud computing and BIM
+                        (if relevant in IT infrastructure management).</li>
+                </ul>
+            </div>
+
+            <div class="section-detail left-text">
+                <h2>Technical Support Engineer</h2>
+                <br>
+                <span>Oracel Company | 2019 – 2021</span>
+                <ul>
+                    <li>Preparing technical support documentation (manuals and guides).</li>
+                    <li>Monitoring and resolving user issues to ensure smooth operations.</li>
+                </ul>
+            </div>
+
+            <h2>Education and Qualifications</h2>
+            <br>
+            <div class="section-detail left-text">
+                <span>Bachelor's Degree in Information Technology
+                    Arab University, Yemen | 2018</span>
+                <ul>
+                    <li>Diploma in Computer Systems Support
+                        <br>
+
+                        Advanced Technical Institute | 2013 – 2017
+                        <br>
+                        GPA: 4.25 out of 5
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="right-bar">
+            <div class="flip-card">
+                <div
+                    style="width:150px; height:150px; border:3px solid #4A90E2; border-radius:50%; overflow:hidden; margin:20px auto; display:flex; justify-content:center; align-items:center;">
+                    <img src="profiel.jpg" alt="Profile Photo"
+                        style="min-width:100%; min-height:100%; object-fit:cover;">
+                </div>
+            </div>
+
+            <h1> Jaber Abdel Fattah
+                <br> Al-Amriny
+            </h1>
+            <h3>MAJ:Information Technology</h3>
+
+            <hr style="border-color: #999;">
+
+            <h1>Skills</h1>
+            <span class="contact-line">Technical Troubleshooting</span>
+            <span class="contact-line">Network Administration</span>
+            <span class="contact-line">#Python , JavaScript , Flutter , C</span>
+
+            <h1 class="contact">CONTACT</h1>
+            <hr>
+            <div>
+                <span style="vertical-align:middle; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    jaberdesign2018@gmail.com</span>
+                <img src="email.svg" style="vertical-align:middle;">
+
+            </div>
+            <div>
+                <span style="vertical-align:middle; font-size: 12px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Al-Mukalla
+                </span>
+
+                <img src="loc.svg" style="vertical-align:middle;">
+            </div>
+
+
+            <div>
+                <span
+                    style="vertical-align:middle; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    781495613 967+
+                </span>
+                <img src="tell.svg" style="vertical-align:middle;">
+
+
+
+            </div>
+
+            <div>
+                <a href="https://github.com/Jaber600"
+                    style="text-decoration: none; color: inherit;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    git hup</a>
+                <a href="https://github.com/Jaber600" style="display: inline-block;">
+                    <img src="gethup.png" style="vertical-align:middle; cursor: pointer;">
+                </a>
+
+
+
+            </div>
+
+            <div>
+                <a class="linkedin font-size: 12px;"
+                    href="https://www.linkedin.com/in/%D8%AC%D8%A7%D8%A8%D8%B1-%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A-0294731b6/"
+                    style="text-decoration: none; color: inherit;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    lin kedin</a>
+                <a href="https://www.linkedin.com/in/%D8%AC%D8%A7%D8%A8%D8%B1-%D8%A7%D9%84%D8%B9%D9%85%D8%B1%D8%A7%D9%86%D9%8A-0294731b6/"
+                    style="display: inline-block;">
+                    <img src="linkedin.png" style="vertical-align:middle; cursor: pointer; width: 25px !important;">
+                </a>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
